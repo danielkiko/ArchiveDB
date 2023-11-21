@@ -2,7 +2,6 @@ package ru.danielKiko.archive.services;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import ru.danielKiko.archive.entities.Employee;
 import ru.danielKiko.archive.entities.Role;
 import ru.danielKiko.archive.repositories.RoleRepository;
 
