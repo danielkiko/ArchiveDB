@@ -1,0 +1,27 @@
+server:
+  port: 8080
+  servlet:
+    encoding:
+      force-response: true
+      charset: UTF-8
+    context-path: /api/v1
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/archiveDatabase
+    username: archiveDatabase
+    password: archiveDatabase
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    enabled: false
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
